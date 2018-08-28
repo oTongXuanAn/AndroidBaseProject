@@ -1,5 +1,6 @@
-package an.xuan.tong.baseproject
+package an.xuan.tong.baseproject.ui
 
+import an.xuan.tong.baseproject.R
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
