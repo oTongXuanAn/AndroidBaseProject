@@ -1,5 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+apply plugin: 'kotlin-kapt'
+
 buildscript {
     ext.kotlin_version = '1.2.30'
     repositories {
@@ -25,4 +27,24 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+    lib_versions = [
+            // main
+            okhttp: '3.10.1',
+            retrofit: '2.0.2',
+            appcompat: '26.1.0',
+            multidex: '1.0.1',
+            jdeferred: '1.2.4',
+            // testing
+            junit: '4.12',
+            assertj_android: '1.1.1',
+            robolectric: '3.1',
+            android_support_test: '0.5',
+            jackson: '2.7.5',
+            mockito: '1.10.19',
+            mockito_kotlin: '0.5.1',
+            play_services: '10.2.1',
+            rxandroid:'2.1.0'
+    ]
 }
