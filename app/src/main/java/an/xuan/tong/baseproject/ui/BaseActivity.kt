@@ -26,6 +26,7 @@ open class BaseActivity : AppCompatActivity() {
             val inputMethodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0)
         }
+        Log.e("antx", "test1")
     }
 
     override fun onResume() {
