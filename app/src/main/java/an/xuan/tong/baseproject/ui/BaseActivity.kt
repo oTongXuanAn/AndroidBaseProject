@@ -4,6 +4,7 @@ import an.xuan.tong.baseproject.R
 import android.app.Activity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 
@@ -13,6 +14,9 @@ open class BaseActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.no_anim, R.anim.slide_out_right)
+        Log.e("antx", "test1")
+        Log.e("antx", "test1")
+        Log.e("antx", "test1")
     }
 
     fun hideKeyboard(activity: Activity) {
