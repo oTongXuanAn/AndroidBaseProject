@@ -15,6 +15,8 @@ open class BaseActivity : AppCompatActivity() {
         super.onBackPressed()
         overridePendingTransition(R.anim.no_anim, R.anim.slide_out_right)
         Log.e("antx", "test1")
+        Log.e("antx", "test1")
+        Log.e("antx", "test1")
     }
 
     fun hideKeyboard(activity: Activity) {
