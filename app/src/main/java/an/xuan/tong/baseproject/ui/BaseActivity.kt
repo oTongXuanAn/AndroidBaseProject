@@ -4,7 +4,6 @@ import an.xuan.tong.baseproject.R
 import android.app.Activity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 
@@ -26,7 +25,6 @@ open class BaseActivity : AppCompatActivity() {
             val inputMethodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0)
         }
-        Log.e("antx", "test1")
     }
 
     override fun onResume() {
